@@ -1,4 +1,5 @@
-// color
+// Variable
+
 /* Color */
 $color-white: #ffffff;
 $color-light-white: #eeeeee;
@@ -9,9 +10,11 @@ $color-dark-grey: #4d4d4d;
 $color-grey: #616161;
 $color-light-grey: #7c7979;
 $color-blue: #73aace;
+$color-accent: #d49466;
 $color-yellow: #fff7d1;
 $color-orange: #feb546;
 $color-black: #000000;
+$color-navbar: #a52a2a;
 
 /* Font size */
 $font-large: 48px;
@@ -25,6 +28,12 @@ $weight-bold: 700;
 $weight-semi-bold: 600;
 $weight-regular: 400;
 
+/* Size */
+$size-border-radius: 4px;
+
+/* Animation */
+$animation-duration: 300ms;
+
 // Universal tags
 * {
   padding: 0;
@@ -34,6 +43,31 @@ $weight-regular: 400;
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 // Typography
@@ -64,4 +98,154 @@ p {
   font-weight: $weight-regular;
   color: $color-black;
   margin: 4px 0;
+}
+
+// Navbar
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../imgs/navbarColor.png);
+  padding: 16px;
+
+  .navbar__logo {
+    font-size: $font-medium;
+    font-weight: $weight-semi-bold;
+
+    i {
+      color: $color-accent;
+    }
+
+    a {
+      color: $color-navbar;
+    }
+  }
+
+  .navbar__menu {
+    display: flex;
+
+    .navbar__menu__item {
+      padding: 8px 12px;
+      margin: 0 4px;
+      color: $color-navbar;
+      cursor: pointer;
+      border-radius: $size-border-radius;
+    }
+
+    .navbar__menu__item.active {
+      border: 2px solid $color-white;
+    }
+
+    .navbar__menu__item:hover {
+      background-color: $color-accent;
+    }
+  }
+}
+
+// Home
+
+#home {
+  background: url(../imgs/homebackground.png);
+
+  .home__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid $color-white;
+  }
+
+  .home__title,
+  .home__description {
+    color: $color-navbar;
+  }
+
+  .home__contact {
+    font-size: $font-regular;
+    font-weight: $weight-bold;
+    margin: 24px;
+    padding: 12px;
+    border: 2px solid $color-white;
+    color: $color-navbar;
+    border-radius: $size-border-radius;
+  }
+
+  .home__contact:hover {
+    background-color: $color-accent;
+  }
+}
+
+// About
+
+#about {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  line-height: 170px;
+  border: 1px solid $color-accent;
+  border-radius: 50%;
+  margin-bottom: 16px;
+
+  i {
+    color: $color-accent;
+    transition: all $animation-duration ease;
+  }
+}
+
+.major__icon:hover i {
+  color: $color-dark-pink;
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title {
+  color: $color-dark-grey;
+}
+.about__job {
+  display: flex;
+  justify-content: space-evenly;
+
+  .job {
+    display: flex;
+    align-items: center;
+
+    .job__log {
+      width: 50px;
+      height: 50px;
+    }
+
+    .job__description {
+      margin: 0 16px;
+      text-align: left;
+
+      .job__name, .job__period {
+        color: $color-light-grey;
+      }
+
+      .job__name {
+        font-size: $font-small;
+      }
+
+      .job__period {
+        font-size: $font-micro;
+      }
+    }
+  }
+}
+
+//Skills
+
+#skills {
+  background: url(../imgs/skillbackground.png);
+  background-size: cover;
 }

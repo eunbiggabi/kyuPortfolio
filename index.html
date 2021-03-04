@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="imgs/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="main.js" defer></script>
 </head>
@@ -24,7 +24,7 @@
             </div>
             <div class="navbar__menu">
                 <ul class="navbar__menu">
-                    <li class="navbar__menu__item">Home</li>
+                    <li class="navbar__menu__item active">Home</li>
                     <li class="navbar__menu__item">About</li>
                     <li class="navbar__menu__item">Skills</li>
                     <li class="navbar__menu__item">My work</li>
@@ -38,7 +38,7 @@
             <section id="home">
                 <img src="imgs/profile.jpeg" alt="Kyu's profile photo" class="home__avatar">
                 <h1 class="home__title">Hello, <br />I'm Kyu</h1>
-                <h2>A Software Engineer currently residing in Brisbane, Australia</h2>
+                <h2 class="home__description">A Software Engineer currently residing in Brisbane, Australia</h2>
                 <button class="home__contact">Contact Me</button>
             </section>
         </header>
@@ -52,13 +52,13 @@
                         <div class="major__icon">
                             <i class="fab fa-html5"></i>
                         </div>
-                        <div class="major__title">HTML & CSS</div>
+                        <div class="major__title">HTML</div>
                     </div>
                     <div class="major">
                         <div class="major__icon">
-                            <i class="fab fa-sass"></i>
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-                        <div class="major__title">SASS</div>
+                        <div class="major__title">CSS</div>
                     </div>
                     <div class="major">
                         <div class="major__icon">
@@ -69,20 +69,27 @@
                 </div>
 
                 <div class="about__job">
-                    <div class="jobs">
+                    <div class="job">
                         <img src="imgs/aboutMe/griffith.png" alt="griffith__logo" class="job__log">
-                        <p class="job__name">Griffith University</p>
-                        <p class="job__period">2004 - 2007</p>
+                        <div class="job__description">
+                            <p class="job__name">Griffith University</p>
+                            <p class="job__period">2004 - 2007</p>
+                        </div>                       
                     </div>
-                    <div class="jobs">
+                    <div class="job">
                         <img src="imgs/aboutMe/inghams.jpeg" alt="inghams__logo" class="job__log">
-                        <p class="job__name">Inghams Enterprises</p>
-                        <p class="job__period">2007 - 2015</p>
+                        <div class="job__description">
+                            <p class="job__name">Inghams Enterprises</p>
+                            <p class="job__period">2007 - 2015</p>
+                        </div>
+                       
                     </div>
-                    <div class="jobs">
+                    <div class="job">
                         <img src="imgs/aboutMe/mps.png" alt="mps__logo" class="job__log">
-                        <p class="job__name">Mps</p>
-                        <p class="job__period">20015 - 20021</p>
+                        <div class="job__description">
+                            <p class="job__name">Mps</p>
+                            <p class="job__period">20015 - 20021</p>
+                        </div>
                     </div>
                 </div>
             </section>
