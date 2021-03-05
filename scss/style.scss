@@ -104,6 +104,8 @@ p {
 // Navbar
 
 #navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -142,12 +144,22 @@ p {
       background-color: $color-dark-pink;
     }
   }
+
+  .navbar__toggle-btn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    font-size: 24px;
+    color: $color-navbar;
+    display: none;
+  }
 }
 
 // Home
 
 #home {
   background: url(../imgs/homebackground.png);
+  background-size: cover;
 
   .home__avatar {
     width: 250px;
@@ -156,14 +168,9 @@ p {
     border: 3px solid $color-white;
   }
 
-  .home__title,
-  .home__description {
-    color: $color-navbar;
-  }
-
   .home__contact {
     font-size: $font-regular;
-    font-weight: $weight-bold;
+    font-weight: $weight-semi-bold;
     margin: 24px;
     padding: 12px;
     border: 2px solid $color-white;
@@ -413,6 +420,11 @@ p {
 
 #testimonials {
   background: url(../imgs/testimonials.png);
+
+  .testimonials__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .testimonials {
@@ -468,5 +480,22 @@ p {
   .contact__links i:hover {
     transform: scale(1.2);
     color: $color-dark-pink;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .navbar__menu {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .navbar__toggle-btn {
+    display: block;
   }
 }
