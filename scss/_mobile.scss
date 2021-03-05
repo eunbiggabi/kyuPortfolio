@@ -1,0 +1,14 @@
+@media (max-width: 700px) {
+    .work__categories {
+        display: flex;
+        flex-direction: column;
+
+        .category__btn {
+            margin-bottom: 5px;
+        }
+    }
+
+    .project {
+        flex-grow: 1;
+    }
+}
