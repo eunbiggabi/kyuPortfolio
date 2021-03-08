@@ -185,6 +185,13 @@ button {
 }
 
 /* About */
+#about a {
+  color: var(--color-navbar);
+}
+
+#about a:hover {
+  text-decoration: underline;
+}
 
 .about__majors {
   display: flex;
@@ -501,6 +508,9 @@ button {
 }
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -511,7 +521,6 @@ button {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    display: none;
   }
 
   .section {

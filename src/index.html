@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <article>
@@ -22,7 +22,8 @@
                 <i class="fab fa-atlassian"></i>
                 <a href="#">Kyu</a>
             </div>
-            <div class="navbar__menu">
+            
+            <div id="menu" class="navbar__menu">
                 <ul class="navbar__menu">
                     <li class="navbar__menu__item active">Home</li>
                     <li class="navbar__menu__item">About</li>
@@ -34,7 +35,7 @@
             </div>
 
             <!-- Toggle button -->
-            <button class="navbar__toggle-btn">
+            <button id="hamburger-menu" class="navbar__toggle-btn">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
@@ -42,7 +43,7 @@
             <!-- Home -->
             <section id="home">
                 <div class="section__container">
-                    <img src="imgs/profile.jpeg" alt="Kyu's profile photo" class="home__avatar">
+                    <img src="../imgs/profile.jpeg" alt="Kyu's profile photo" class="home__avatar">
                     <h1 class="home__title">Hello, <br />I'm Kyu</h1>
                     <h2 class="home__description">A Software Engineer currently residing in Brisbane, Australia</h2>
                     <button class="home__contact">Contact Me</button>
@@ -54,7 +55,8 @@
             <section id="about">
                 <div class="section__container">
                 <h1>About me</h1>
-                <p>I had only been working as a process worker for 14 years after graduating from university. To be honest, I do love these jobs and it was fit for me. However it time to move on to next step, and I am ready for it. I am look forward to further career as a software developer</p>
+                <p>I am fairly easy going. I am willing to help anyone at any time. I do not like to be taken advantage of. See my resume link on below</p>
+                <a href="docs/kyuResume.pdf" target="blank">Resume</a>
                 <div class="about__majors">
                     <div class="major">
                         <div class="major__icon">
@@ -78,25 +80,25 @@
 
                 <div class="about__job">
                     <div class="job">
-                        <img src="imgs/aboutMe/griffith.png" alt="griffith__logo" class="job__log">
+                        <img src="../imgs/aboutMe/griffith.png" alt="griffith__logo" class="job__log">
                         <div class="job__description">
                             <p class="job__name">Griffith University</p>
-                            <p class="job__period">2004 - 2007</p>
+                            <p class="job__period">2005 - 2009</p>
                         </div>                       
                     </div>
                     <div class="job">
-                        <img src="imgs/aboutMe/inghams.jpeg" alt="inghams__logo" class="job__log">
+                        <img src="../imgs/aboutMe/inghams.jpeg" alt="inghams__logo" class="job__log">
                         <div class="job__description">
                             <p class="job__name">Inghams Enterprises</p>
-                            <p class="job__period">2007 - 2015</p>
+                            <p class="job__period">2010 - 2017</p>
                         </div>
                        
                     </div>
                     <div class="job">
-                        <img src="imgs/aboutMe/mps.png" alt="mps__logo" class="job__log">
+                        <img src="../imgs/aboutMe/mps.png" alt="mps__logo" class="job__log">
                         <div class="job__description">
                             <p class="job__name">Mps</p>
-                            <p class="job__period">20015 - 20021</p>
+                            <p class="job__period">20017 - 20021</p>
                         </div>
                     </div>
                 </div>
@@ -192,42 +194,42 @@
 
                 <div class="work__projects">
                     <a href="https://github.com/eunbiggabi/form1" class="project" target="blank">
-                        <img src="imgs/projects/form1.png" alt="survey__form1" class="project__img">
+                        <img src="../imgs/projects/form1.png" alt="survey__form1" class="project__img">
                         <div class="project__description">
                             <h3>Form 1</h3>
                             <span>Practice form</span>
                         </div>
                     </a>
                     <a href="https://github.com/eunbiggabi/form2" class="project" target="blank">
-                        <img src="imgs/projects/form2.png" alt="survey__form2" class="project__img">
+                        <img src="../imgs/projects/form2.png" alt="survey__form2" class="project__img">
                         <div class="project__description">
                             <h3>Form 2</h3>
                             <span>Practice form</span>
                         </div>
                     </a>
                     <a href="https://github.com/eunbiggabi/flexbox1" class="project" target="blank">
-                        <img src="imgs/projects/flexbox1.png" alt="flex__box1" class="project__img">
+                        <img src="../imgs/projects/flexbox1.png" alt="flex__box1" class="project__img">
                         <div class="project__description">
                             <h3>Flex box 1</h3>
                             <span>Practice flex-box</span>
                         </div>
                     </a>
                     <a href="https://github.com/eunbiggabi/flexbox2" class="project" target="blank">
-                        <img src="imgs/projects/flexbox2.png" alt="flex__box2" class="project__img">
+                        <img src="../imgs/projects/flexbox2.png" alt="flex__box2" class="project__img">
                         <div class="project__description">
                             <h3>Flex box 2</h3>
                             <span>Practice flex-box</span>
                         </div>
                     </a>
                     <a href="https://github.com/eunbiggabi/cloneCoding1" class="project" target="blank" >
-                        <img src="imgs/projects/clonecoding1.png" alt="Clone__coding1" class="project__img">
+                        <img src="../imgs/projects/clonecoding1.png" alt="Clone__coding1" class="project__img">
                         <div class="project__description">
                             <h3>Clone coding 1</h3>
                             <span>Stack overflow clone coding</span>
                         </div>
                     </a>
                     <a href="https://github.com/eunbiggabi/cloneCoding2" class="project" target="blank">
-                        <img src="imgs/projects/clonecoding2.png" alt="Clone__coding2" class="project__img">
+                        <img src="../imgs/projects/clonecoding2.png" alt="Clone__coding2" class="project__img">
                         <div class="project__description">
                             <h3>Clone coding 2</h3>
                             <span>Instagram clone coding</span>
@@ -243,7 +245,7 @@
                     <h3>See what they say about me</h3>
                     <div class="testimonials">
                     <div class="testimonial">
-                        <img src="imgs/testimonials/face.jpg" alt="testimonial__avatar" class="testimonial__avatar">
+                        <img src="../imgs/testimonials/face.jpg" alt="testimonial__avatar" class="testimonial__avatar">
                         <div class="testimonial__speech-bubble">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias praesentium a esse aliquam nihil! Quas dolorum earum, eligendi minima suscipit repellat expedita sunt molestias, corporis placeat nemo cum facere?</p>
                         </div>
@@ -252,7 +254,7 @@
                         <div class="testimonial__speech-bubble">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias praesentium a esse aliquam nihil! Quas dolorum earum, eligendi minima suscipit repellat expedita sunt molestias, corporis placeat nemo cum facere?</p>
                         </div>
-                        <img src="imgs/testimonials/face.jpg" alt="testimonial__avatar" class="testimonial__avatar">
+                        <img src="../imgs/testimonials/face.jpg" alt="testimonial__avatar" class="testimonial__avatar">
                     </div>
                 </div>
                 </div>
