@@ -511,6 +511,7 @@ button {
   .hidden {
     display: none;
   }
+  
   #navbar {
     flex-direction: column;
     align-items: flex-start;
