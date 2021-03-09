@@ -16,44 +16,46 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fab fa-atlassian"></i>
-            <a href="#">Kyu</a>
-        </div>
-
-        <div id="menu" class="navbar__menu">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Testimonials</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
-        </div>
-
-        <!-- Toggle button -->
-        <button id="hamburger-menu" class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
     <header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <i class="fab fa-atlassian"></i>
+                <a href="#">Kyu</a>
+            </div>
+    
+            <div id="menu" class="navbar__menu">
+                <ul class="navbar__menu">
+                    <li class="navbar__menu__item active">Home</li>
+                    <li class="navbar__menu__item">About</li>
+                    <li class="navbar__menu__item">Skills</li>
+                    <li class="navbar__menu__item">My work</li>
+                    <li class="navbar__menu__item">Blogs</li>
+                    <li class="navbar__menu__item">Testimonials</li>
+                    <li class="navbar__menu__item">Contact</li>
+                </ul>
+            </div>
+    
+            <!-- Toggle button -->
+            <button id="hamburger-menu" class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    
         <!-- Home -->
+    <main>    
         <section id="home">
             <div class="section__container">
                 <img src="../imgs/profile.jpeg" alt="Kyu's profile photo" class="home__avatar">
                 <h1 class="home__title">Hello, <br />I'm Kyu</h1>
-                <h2 class="home__description">A Software Engineer currently residing in Brisbane, Australia</h2>
+                <h3 class="home__description">A Software Engineer currently residing in Brisbane, Australia</h3>
                 <button class="home__contact">Contact Me</button>
             </div>
         </section>
-    </header>
-    <main>
     <!-- About -->
         <section id="about">
             <div class="section__container">
-            <h1>About me</h1>
+            <h2>About me</h2>
             <p>I am fairly easy going. I am willing to help anyone at any time. I do not like to be taken advantage of. See my resume link on below</p>
             <a href="docs/kyuResume.pdf" target="blank">Resume</a>
             <div class="about__majors">
@@ -106,8 +108,8 @@
 <!-- Skills -->
         <section id="skills">
             <div class="section__container">
-                <h1>Skills</h1>
-                <h2>Skills & Attributes</h2>
+                <h2>Skills</h2>
+                <h3>Skills & Attributes</h3>
                 <p>Passion for learning new technologies. Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.</p>
                 <div class="skillset">
                     <div class="skillset__left">
@@ -181,7 +183,7 @@
     <!-- Work -->
         <section id="work">
             <div class="section__container">
-            <h1>My work</h1>
+            <h2>My work</h2>
             <h3>Projects</h3>
             <div class="work__categories">
                 <button class="category__btn active">All<span class="category__count">6</span></button>
@@ -238,21 +240,41 @@
         </section>
 
     <!-- Blog  -->
-        <section id="section__container">
-            <article class="blog">
-                <img src="" alt="">
-                <a href=""></a>
-            </article>
-            <article class="blog"></article>
-            <article class="blog"></article>
-            <article class="blog"></article>
-            <article class="blog"></article>
+        <section id="blogs">
+            <div class="section__container">
+                <h2>Blogs</h2>
+                    <div class="blog__container">
+                        <article class="blog">
+                            <img src="../imgs/blog-images/I-love-blogers.jpg" alt="blogers__img" class="blog__img">
+                            <a href="blog1.html" target="blank" class="blog__link">Blog 1</a>
+                        </article>
+                        <article class="blog">
+                            <img src="../imgs/blog-images/puzzles.jpg" alt="sport-player__img" class="blog__img">
+                            <a href="blog2.html" target="blank" class="blog__link">Blog 2</a>
+                        </article>
+                        <article class="blog">
+                            <img src="../imgs/blog-images/modal.jpg" alt="princess__img" class="blog__img">
+                            <a href="blog2.html" target="blank" class="blog__link">Blog 3</a>
+                        </article>
+                        <article class="blog">
+                            <img src="../imgs/blog-images/covid.webp" alt="princess__img" class="blog__img">
+                            <a href="blog2.html" target="blank" class="blog__link">Blog 4</a>
+                        </article>
+                        <article class="blog">
+                            <img src="../imgs/blog-images/baby.jpg" alt="princess__img" class="blog__img">
+                            <a href="blog2.html" target="blank" class="blog__link">Blog 3</a>
+                        </article>
+                    </div>
+
+                
+            </div>
+         
         </section>
-        
+
     <!-- Testimonials -->
         <section id="testimonials">
             <div class="section__container">
-                <h1>Testimonials</h1>
+                <h2>Testimonials</h2>
                 <h3>See what they say about me</h3>
                 <div class="testimonials">
                     <article class="testimonial">
@@ -275,8 +297,8 @@
     <!-- Contact -->
         <section id="contact">                
             <div class="section__container">
-                <h1 class="contact__title">Let's talk</h1>
-                <h2 class="contact__email">eunkyuchloe@gmail.com</h2>
+                <h2 class="contact__title">Let's talk</h2>
+                <h3 class="contact__email">eunkyuchloe@gmail.com</h3>
                 <div class="contact__links">
                     <a href="https://github.com/eunbiggabi" target="blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/eun-kyu-jeon-018370204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhmaCi9EaSUWA6deShKCP7Q%3D%3D" target="blank"><i class="fab fa-linkedin"></i></a>
