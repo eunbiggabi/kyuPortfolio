@@ -57,7 +57,6 @@ body {
   margin: auto;
   text-align: center;
   padding: 50px;
-  margin: auto;
 }
 
 /* Typography */
@@ -139,6 +138,7 @@ button {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  border-radius: var(--border-radius);
 }
 
 .navbar__menu__item.active {
@@ -148,6 +148,7 @@ button {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
+  border-radius: var(--size-border-radius);
 }
 
 /* Home */
@@ -511,7 +512,7 @@ button {
   .hidden {
     display: none;
   }
-  
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -522,6 +523,11 @@ button {
     flex-direction: column;
     text-align: center;
     width: 100%;
+  }
+
+  .navbar__menu__item {
+    width: 90%;
+    margin: 2px auto;
   }
 
   .section {
