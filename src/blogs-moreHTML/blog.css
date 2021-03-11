@@ -49,21 +49,6 @@ body {
   font-family: "Open Sans", sans-serif;
   cursor: default;
 }
-/* Section common */
-
-.section__container {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  padding: 50px;
-}
-
-main {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  padding: 50px;
-}
 
 /* Typography */
 
@@ -119,7 +104,7 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: url(../imgs/navbarColor.png);
+  background: url(../../imgs/navbarColor.png);
   align-items: center;
   color: var(--color-navbar);
   z-index: 3;
@@ -166,22 +151,26 @@ button {
   display: none;
 }
 
-h1 {
-  margin: 50px;
+#blog {
+  padding: 40px;
+  padding-top: 120px;
 }
 
-img {
-  width: 1000px;
-  height: 600px;
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+}
+
+.blog__img {
+  width: 500px;
+  height: 400px;
   border-radius: var(--size-border-radius);
 }
 
-.figure__content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-p {
+.text__container p {
   text-align: justify;
 }
 
@@ -217,5 +206,23 @@ p {
 
   .navbar__menu.active {
     display: flex;
+  }
+
+  #blog {
+    padding: 10px;
+    padding-top: 80px;
+  }
+
+  .section__container {
+    flex-direction: column;
+  }
+
+  .box {
+    margin: 16px 0;
+  }
+
+  .blog__img {
+    width: 100%;
+    height: 360px;
   }
 }
