@@ -25,13 +25,13 @@
     
             <div id="menu" class="navbar__menu">
                 <ul class="navbar__menu">
-                    <li class="navbar__menu__item active">Home</li>
-                    <li class="navbar__menu__item">About</li>
-                    <li class="navbar__menu__item">Skills</li>
-                    <li class="navbar__menu__item">My work</li>
-                    <li class="navbar__menu__item">Blogs</li>
-                    <li class="navbar__menu__item">Testimonials</li>
-                    <li class="navbar__menu__item">Contact</li>
+                    <li class="navbar__menu__item active" date='#home'>Home</li>
+                    <li class="navbar__menu__item" date-link="#about">About</li>
+                    <li class="navbar__menu__item" date-link="#skills">Skills</li>
+                    <li class="navbar__menu__item" date-link="#work">My work</li>
+                    <li class="navbar__menu__item" date-link="#blogs">Blogs</li>
+                    <li class="navbar__menu__item" date-link="#testimonials">Testimonials</li>
+                    <li class="navbar__menu__item" date-link="#contact">Contact</li>
                 </ul>
             </div>
     
@@ -49,7 +49,7 @@
                 <img src="../imgs/profile.jpeg" alt="Kyu's profile photo" class="home__avatar">
                 <h1 class="home__title">Hello, <br />I'm Kyu</h1>
                 <h3 class="home__description">A Software Engineer currently residing in Brisbane, Australia</h3>
-                <button class="home__contact">Contact Me</button>
+                <button class="home__contact" data-link="#contact">Contact Me</button>
             </div>
         </section>
     <!-- About -->
