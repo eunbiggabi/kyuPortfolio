@@ -57,6 +57,7 @@ body {
   margin: auto;
   text-align: center;
   padding: 50px;
+  padding-top: 80px;
 }
 
 /* Typography */
@@ -581,6 +582,7 @@ button {
 
   .section__container {
     padding: 16px;
+    padding-top: 60px;
   }
 
   .about__majors {
